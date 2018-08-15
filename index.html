@@ -1,60 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css">
-    <title>Моє резюме</title>
-</head>    
+    <meta charset="UTF-8">
+    <title>Барбершоп "Бородинский"</title>
+</head>
 <body>
+    <header class="main-header">
+        <nav class="main-navigation">
+           <a class="main-header-logo" href="#" >
+                <img src="img/index-logo.svg" alt="Логотип Бородинского Барбершопа">
+            </a>
+            <ul class="site-navigation">
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="price.html">Прайс-Лист</a></li>
+                <li><a href="catalog.html">Магазин</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+            <ul class="user-navigation">
+                <li class="login-link">Вход</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="visually-hidden">БарберШоп Бородинский</h1>
+        <section class="features">
+            <h2 class="visually-hidden">Преемущества</h2>
+            <ul class="features-list">
+                <li class="features-item">
+                    <h3>БЫСТРО</h3>
+                    <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+                </li>
+                <li class="features-item">
+                    <h3>КРУТО</h3>
+                    <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
+                    МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
+                    ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
+                    </p>
+                </li>
+                <li class="features-item">
+                    <h3>ДОРОГО</h3>
+                    <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
+                </li>
+            </ul>
+        </section>
+        <section class="news">
+            <h2 class="news-title">НОВОСТИ</h2>
+            <ul class="news-list">
+                <li class="news-item">
+                    <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+                    <time datetime="2018-08-09">09 августа</time>
+                </li>
+                <li class="news-item">
+                    <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+                    <time datetime="2018-08-09">09 августа</time>
+                </li>
+            </ul>
+            <a href="news.html" class="button">Все новости</a>
+        </section>
+        <section class="gallery">
+            <h2 class="gallery-title">ФОТОГАЛЕРЕЯ</h2>
+            <figure class="gallery-content">
+               <a href="#">
+                   <img src="studio.jpg" alt="Interior">
+               </a>
+            </figure>
+            <span class="button gallery-button gallery-button-back">Назад</span>
+            <span class="button gallery-button gallery-button-next">Вперед</span>
+        </section>
+        <section class="contacts">
+            <h2 class="contacts-title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+            <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+            АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8 <br>
+            ТЕЛЕФОН: +7 (495) 666-02-66 <br> </p>
+            <p>ВРЕМЯ РАБОТЫ: <br>
+            ПН—ПТ: С 10:00 ДО 22:00 <br>
+            СБ—ВС: С 10:00 ДО 19:00 <br> </p>
+            <a href="map.html" class="button contacts-button">КАК ПРОЕХАТЬ</a>
+            <a href="contacts.html" class="button contacts-button">ОБРАТНАЯ СВЯЗЬ</a>
+        </section>
+        <section class="appointment">
+            <h2 class="appointment-title">ЗАПИСАТЬСЯ</h2>
+            <p class="appointment-info">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+            <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+                <p class="appointment-item"> Дата
+                    <input type="text" name="date" value="" placeholder="08.10.2017">
+                </p>
+                <p class="appointment-item"> Время
+                    <input type="text" name="date" value="" placeholder="10:00">
+                </p>
+                <p class="appointment-item"> Ваше Имя
+                    <input type="text" name="date" value="" placeholder="Борода">
+                </p>
+                <p class="appointment-item"> Телефон
+                    <input type="text" name="date" value="" placeholder="+7 123 456-78-90">
+                </p>
+                <button class="button" type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <p class="footer-contacts">
+            БАРБЕРШОП «БОРОДИНСКИЙ» <br>
+            АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <br>
+            <a href="map.html">КАК НАС НАЙТИ?</a> <br>
+            ТЕЛЕФОН: +7 (495) 666-02-66 <br>
+        </p>
+        <div class="footer-social">
+            <b>ДАВАЙТЕ ДРУЖИТЬ!</b>
+            <ul>
+                <li><a class="social-button" href="#">Вконтаке</a></li>
+                <li><a class="social-button" href="#">Facebook</a></li>
+                <li><a class="social-button" href="#">Instagram</a></li>
+            </ul>
+        </div>
+        <p class="footer-copyright">
+            <b>РАЗРАБОТАНО:</b>
+            <a class="button" href="#">html academy</a>
+        </p>
+    </footer>
     
-    <div id="header">
-        <h1>Алексей Примадонин</h1>
-        <h3>Веб-разработчик</h3>
-        <p>
-            <a href="mailto:ap@somemail.com">ap@somemail.com,</a> 
-            <a href="https://github.com/alprima">github.com/alprima</a> 
-        </p>
-    </div>
-    <div id="main">
-        <p>
-        Я увлекаюсь веб-дизайном со старших класов школы. Начал с мини-сайтов для себя и друзей, потом для местных фирм и организаций. Псоле курсов на Хекслете начал работу веб-разработчиком. Пишу на JS (ES6), люблю функциональное программирование. Умею работать с SQL, HTTP, Git и Ansible.<br> Пишу тесты.<br>
-        <br>
-        Готов к удаленной работе и релокации.
-        </p>
-        <h2>Опыт работы</h2>
-        <h3>Майкрософт Россия</h3>
-        Программист (стажировка), <i>апрель 2016 - ноябрь 2016</i>
-        <ul>
-            <li>Работа в команде на C#</li>
-            <li>Создание веб-сайта проекта JDX</li>
-        </ul>
-        <h3>ТОО "Винная Баня"</h3>
-        Веб-дизайн, <i>январь 2015 - апрель 2016</i>
-        <ul>
-            <li>Верстка макетов</li>
-            <li>Разборка тем для Wordpress</li>
-            <li>Поддержка сайта</li>
-        </ul>
-        <h2>Образование</h2>
-        <h3>Университет им.Патриса Лумумбы</h3>
-        Бакалавр информационных систем, 2012-2016
-        <h3>Хекслет</h3>
-        Курсы по програмированию, JS Backend/Frontend, 2015-2017
-        <h2>Другие навыки и увлечения</h2>
-        <ul>
-            <li>Основы дизайна и типографики</li>
-            <li>Любительська игра на гитаре</li>
-            <li>Хоккей на траве (городская лига)</li>
-        </ul>
-    </div>
-    <div id="footer">
-        <p>
-            <b>Алексей Примадонин</b><br>
-            ул.Полевая, 12, Астрахань, Россия +7 888 127 00 01, <a href="mailto:ap@somemail.com">ap@somemail.com,</a>
-        </p>
-    </div>
-	<div>
-		<p>PRR</p>
-	</div>
-</body>    
+    <section class="modal modal-login">
+        <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+        <p>Введите пожалуйста свой логин и пароль</p>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <input class="login-icon-user" type="text" name="login" value="" placeholder="Логин">
+            </p>
+        </form>
+    </section>
+</body>
 </html>
