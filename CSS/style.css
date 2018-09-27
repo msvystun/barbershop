@@ -1,0 +1,561 @@
+@font-face{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+html, body{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #f7f4f1;
+    background-color: #070707;
+    background-image: url('../img/main.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.other-pages{
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #f8f5f2;
+    background-image: url(../img/news-bg.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+.main-navigation{
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #000;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+
+/*Можна взяти за основу*/
+
+img{
+    max-width: 100%; 
+    height: auto;
+}
+.vissually-hidden:not(focus):not(active), input[type="checkbox"].vissually-hidden, input[type="radio"].vissually-hidden{ 
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/*Можна взяти за основу*/
+
+.button{
+    color: #fff;
+    font: inherit; /*наслідування шрифту*/
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #000;
+    border: none;
+}
+.button:hover,
+.button:focus,
+.button:active{
+    background-color: #663d15;
+}
+.site-navigation,
+.user-navigation{
+    list-style: none;
+}
+.site-navigation a,
+.user-navigation a{
+    color: #fff;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus{
+    background-color: #242424;
+}
+.features-list, .news-list, .footer-social ul{ /* for ul list*/
+    list-style: none;
+}
+.features-item{
+    text-align: center;
+}
+.features-item h3{
+    position: relative;
+    margin: 0;
+    margin-bottom: 60px;
+    font-size: 30px;
+    line-height: 42px;
+}
+.features-item h3::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: -35px;
+    left: 50%;
+    margin-left: -10px;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+.features-item p{
+    margin: 0 10px;
+}
+.info-1, .info-2{
+    color: #000;
+    background-color: #e7e5e2;
+background-image:
+    url(../img/line.png),
+    url(../img/news-bg.jpg);
+    background-position: center, 0 0;
+    background-repeat: no-repeat, repeat;
+}
+.info-1 h2, .info-2 h2, .modal h2{
+    font-size: 30px;
+    line-height: 42px;
+}
+.modal{
+    color: #000;
+    background-color: #e7e5e2;
+    background-image: url(../img/news-bg.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+.info-1 h2, .info-2 h2, .modal h2{
+    font-size: 30px;
+    line-height: 42px;
+}
+time{
+    text-transform: none;/* uppercase off*/
+}
+.gallery-content img{
+    background-color: #ccc;
+    border: 7px solid #fff;
+}
+.appointment-form input, .login-form input, table td{
+    border: 2px solid #000101;
+    color: #4a4948;
+    font: inherit;
+    background-color: transparent;
+}
+.appointment-form input:focus{
+    border-color: #663d15;
+    /*outline: none;забираєм обводку синім*/
+}
+footer{
+    background-color: #1e1e1e;
+    background-image: url(../img/footer-bg.jpg);
+}
+.footer-contacts a{
+    color: #fff;
+    text-decoration: underline;
+}
+.footer-contacts a:hover,
+.footer-contacts a:focus{
+    text-decoration: none;
+}
+.footer-social{
+    text-align: center;
+}
+.footer-social li{
+    width: 43px;
+    height: 43px;
+    background-color: #000;
+}
+.footer-social li:hover,
+.footer-social li:focus{
+    color: #000;
+    background-color: #fff;
+}
+
+.footer-copyright{
+    text-align: center;
+}
+.footer-copyright a{
+    color: #fff;
+    background-color: #000;
+}
+.footer-copyright a:hover,
+.footer-copyright a:focus{
+    color: #000;
+    background-color: #fff;
+}
+.login-form input[type="text"],
+.login-form input[type="password"]{
+    text-transform: uppercase;
+}
+.login-form input:focus{
+    border-color: #663d15;
+}
+.login-password-info a{
+    color: #000;
+    text-decoration: underline;
+}
+.login-password-info a:hover,
+.login-password-info a:focus{
+    text-decoration: none;
+}
+.login-checkbox:hover,
+.login-checkbox:focus{
+    color: #663d15;
+}
+.breadcrumbs, .filter-list, .pagination-list{
+    list-style: none;
+}
+.breadcrumbs a{
+    color: #000;
+    text-decoration: none;
+}
+.breadcrumbs .breadcrumbs-current, .product-article{
+    color: #aba9a7;
+}
+.page-title {
+    font-size: 30px;
+    line-height: 42px;
+    padding: 0;
+    margin: 0;
+}
+.breadcrumbs{
+    font-size: 14px;
+    line-height: 20px;
+}
+legend{
+    font-size: 24px;
+    line-height: 30px;
+}
+.catalog-category{
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #000;
+    text-transform: none;
+}
+.catalog-item-title{
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+    text-transform: uppercase;
+}
+.catalog-item-price b{
+    background-color: #e5e5e5;
+}
+.pagination-item a{
+    color: #fff;
+    background-color: #000;
+}
+.footer-other{
+    color: #fff;
+}
+.product-foto img, section img{
+    box-shadow: 0 0 15px rgba(1,1,1,0.2);
+}
+.price-title{
+    font-size: 48px;
+    line-height: 48px;
+}
+.price-info-title{
+    font-size: 24px;
+    line-height: 30px;
+}
+.visually-hidden{
+    display: none;
+}
+
+/*Розмітка сторінки*/
+
+.main-navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+}
+
+.other-pages-logo{
+    margin-top: 25px;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+.main-navigation-wrapper{
+    width: 100%;
+    margin-bottom: 60px;
+    background-color: #000000;
+    min-height: 70px;
+    background-color: #000;
+}
+.main-navigation-wrapper .container{
+    display: flex;
+    justify-content: space-between;
+}
+.main-header-logo{
+    order: 2;
+    width: 371px;
+    height: 155px;
+    margin-bottom: 70px;
+}
+.site-navigation{
+    width: 620px;
+}
+.user-navigation{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 140px;
+}
+.site-navigation, .user-navigation{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    min-height: 70px;
+}
+.site-navigation a, .user-navigation a{
+    display: block;
+    padding: 25px 20px;
+}
+.user-navigation a{
+    padding-left: 0;
+}
+.user-navigation .login-link{
+    position: relative;
+    padding-left: 50px;
+}
+.user-navigation .login-link:active,
+.user-navigation .login-link:hover{
+    background-color: #242424;
+}
+.login-link::before{
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 24px;
+    width: 16px;
+    height: 18px;
+    background-image: url(../img/login.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.3;
+}
+.login-link:active::before,
+.login-link:focus::before,
+.login-link:hover::before{
+    opacity: 1;
+}
+.features{
+    margin-bottom: 80px;
+}
+.features-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.features-item{
+    width: 300px;
+}
+.info-1, .info-2{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 70px;
+}
+.news {
+    width: 360px;
+}
+.gallery{
+    width: 320px;
+}
+.news-list, .gallery-content{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.gallery{
+    padding-left: 70px;
+}
+.news-item{
+    padding-bottom: 30px;
+}
+.gallery-content{
+    padding-bottom: 44px;
+}
+.news-item p{
+    padding: 0;
+    margin: 0;
+}
+.gallery-button {
+    width: 140px;
+    height: 44px;
+}
+.gallery-button-back{
+    margin-right: 20px;
+}
+.news .button, .contacts .button, .footer-copyright .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 44px;
+}
+.contacts-button-wrapper{
+    display: flex;
+    align-items: flex-start;
+}
+.info-1{
+    margin-bottom: 36px;
+}
+.appointment{
+    width: 300px;
+}
+.contacts{
+    width: 335px;
+}
+.contacts-button-wrapper a:first-child{
+    margin-right: 20px;
+}
+.contacts-button-wrapper{
+    margin-top: 25px;
+}
+.appointment-form .button{
+    width: 300px;
+    height: 44px;
+}
+.appointment-item-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.appointment-item{
+    width: 140px;
+}
+.appointment-item-wrapper:nth-child(2){
+    margin-bottom: 20px;
+}
+.info-2{
+    margin-bottom: 65px;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.footer-contacts, .footer-social, .footer-copyright{
+    width: 300px;
+    padding-top: 60px;
+}
+.footer-social-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    padding-top: 15px;
+    list-style: none;
+}
+.footer-wrapper p{
+    margin-top: 0;
+}
+.footer-copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-copyright .button{
+    margin-top: 15px;
+}
+.modal-login{
+    width: 460px;
+    height: 385px;
+}
+.modal-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 315px;
+    margin: 0 auto;
+}
+.breadcrumbs{
+    display: flex;
+    margin-bottom: 50px;
+    padding-left: 0;
+    margin-left: 0;
+}
+.breadcrumbs li{
+    padding-right: 20px;
+}
+.filters-catalog-wrapper{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+.filters {
+    width: 180px;
+}
+.catalog-list-wrapper{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.container-other-pages{
+    width: 950px;
+}
+.catalog-item{
+    margin: 20px;
+}
+.pagination-list{
+    display: flex;
+}
+.filter-button{
+    width: 112px;
+    height: 43px;
+}
+
+/*Розмітка catalog-item*/
+
+.foto-info-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.product-info{
+    width: 385px;
+}
+.product-foto-preview{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: space-around;
+}
+.product-foto-preview li{
+    width: 140px;
+}
+.product-foto-preview li:nth-child(2){
+    margin: 0 15px;
+}
+.footer-other{
+    margin-top: 50px;
+}
+.price-title{
+    text-align: center;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.price-wrapper{
+    width: 380px;
+}
