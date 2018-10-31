@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>Барбершоп "Бородинский"</title>
@@ -7,26 +8,27 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
+
 <body>
     <header class="main-header">
         <nav class="main-navigation">
-                <a class="main-header-logo" href="#" >
+            <a class="main-header-logo" href="#">
                 <img src="img/index-logo.svg" alt="Логотип Бородинского Барбершопа">
-                </a>
-                <div class="main-navigation-wrapper">
-                   <div class="container">
-                        <ul class="site-navigation">
-                            <li><a href="info.html">Информация</a></li>
-                            <li><a href="news.html">Новости</a></li>
-                            <li><a href="price.html">Прайс-Лист</a></li>
-                            <li><a href="catalog.html">Магазин</a></li>
-                            <li><a href="contact.html">Контакти</a></li>
-                        </ul>
-                        <ul class="user-navigation">
-                            <li class="login-link"><a href="">Вход</a></li>
-                        </ul>
-                    </div>
+            </a>
+            <div class="main-navigation-wrapper">
+                <div class="container">
+                    <ul class="site-navigation">
+                        <li class="site-navigation-current"><a href="info.html">Информация</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="price.html">Прайс-Лист</a></li>
+                        <li><a href="catalog.html">Магазин</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
+                    </ul>
+                    <ul class="user-navigation">
+                        <li><a class="login-link" href="login.html">Вход</a></li>
+                    </ul>
                 </div>
+            </div>
         </nav>
     </header>
     <main class="container">
@@ -41,8 +43,8 @@
                 <li class="features-item">
                     <h3>КРУТО</h3>
                     <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
-                    МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
-                    ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
+                        МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
+                        ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
                     </p>
                 </li>
                 <li class="features-item">
@@ -81,13 +83,13 @@
             <section class="contacts">
                 <h2 class="contacts-title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
                 <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-                АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8 <br>
-                ТЕЛЕФОН: +7 (495) 666-02-66 <br> </p>
+                    АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8 <br>
+                    ТЕЛЕФОН: +7 (495) 666-02-66 <br> </p>
                 <p>ВРЕМЯ РАБОТЫ: <br>
-                ПН—ПТ: С 10:00 ДО 22:00 <br>
-                СБ—ВС: С 10:00 ДО 19:00 <br> </p>
+                    ПН—ПТ: С 10:00 ДО 22:00 <br>
+                    СБ—ВС: С 10:00 ДО 19:00 <br> </p>
                 <div class="contacts-button-wrapper">
-                    <a href="map.html" class="button contacts-button">КАК ПРОЕХАТЬ</a>
+                    <a href="map.html" class="button contacts-button-map">КАК ПРОЕХАТЬ</a>
                     <a href="contacts.html" class="button contacts-button">ОБРАТНАЯ СВЯЗЬ</a>
                 </div>
             </section>
@@ -95,23 +97,19 @@
                 <h2 class="appointment-title">ЗАПИСАТЬСЯ</h2>
                 <p class="appointment-info">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
                 <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-                    <div class="appointment-item-wrapper">
-                        <p class="appointment-item"> Дата
-                        <input type="text" name="date" value="" placeholder="08.10.2017">
-                        </p>
-                        <p class="appointment-item"> Время
-                        <input type="text" name="date" value="" placeholder="10:00">
-                        </p>
-                    </div>
-                    <div class="appointment-item-wrapper">
-                        <p class="appointment-item"> Ваше Имя
-                        <input type="text" name="date" value="" placeholder="Борода">
-                        </p>
-                        <p class="appointment-item"> Телефон
-                        <input type="text" name="date" value="" placeholder="+7 123 456-78-90">
-                        </p>
-                    </div>
-                        <button class="button" type="submit">Отправить</button>
+                    <p class="appointment-item"><label for="date">Дата</label>
+                        <input type="text" name="date" value="" placeholder="08.10.2017" id="date">
+                    </p>
+                    <p class="appointment-item"><label for="time">Время</label>
+                        <input type="text" name="date" value="" placeholder="10:00" id="time">
+                    </p>
+                    <p class="appointment-item"><label for="user-name">Ваше Имя</label>
+                        <input type="text" name="date" value="" placeholder="Борода" id="user-name">
+                    </p>
+                    <p class="appointment-item"><label for="phone">Телефон</label>
+                        <input type="text" name="date" value="" placeholder="+7 123 456-78-90" id="phone">
+                    </p>
+                    <button class="button" type="submit">Отправить</button>
                 </form>
             </section>
         </div>
@@ -121,18 +119,23 @@
             <p class="footer-contacts">
                 БАРБЕРШОП «БОРОДИНСКИЙ» <br>
                 АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <br>
-                <a href="map.html">КАК НАС НАЙТИ?</a> <br>
+                <a href="map.html" class="contacts-button-map" >КАК НАС НАЙТИ?</a> <br>
                 ТЕЛЕФОН: +7 (495) 666-02-66 <br>
             </p>
             <div class="footer-social">
                 <b>ДАВАЙТЕ ДРУЖИТЬ!</b>
-                <ul class="footer-social-wrapper">
-                    <li><a class="social-button" href="#"><img src="img/vk.svg" alt="">
-                    </a>
+                <ul>
+                    <li><a class="social-button" href="#">
+                            <span class="vissually-hidden">Вконтакте</span>
+                        </a>
                     </li>
-                    <li><a class="social-button" href="#"><img src="img/facebook.svg" alt=""></a>
+                    <li><a class="social-button" href="#">
+                            <span class="vissually-hidden">Фейсбук</span>
+                        </a>
                     </li>
-                    <li><a class="social-button" href="#"><img src="img/instagram.svg" alt=""></a>
+                    <li><a class="social-button" href="#">
+                            <span class="vissually-hidden">Инстаграм</span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -142,19 +145,19 @@
             </p>
         </div>
     </footer>
-    
+
     <section class="modal modal-login">
         <div class="modal-wrapper">
             <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
-            <p>Введите пожалуйста свой логин и пароль</p>
+            <p class="login-info">Введите пожалуйста свой логин и пароль</p>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                 <p>
-                   <label class="visually-hidden" for="user-login">Логин</label>
-                   <input class="login-icon login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+                    <label class="visually-hidden" for="user-login">Логин</label>
+                    <input class="login-icon login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
                 </p>
                 <p>
-                   <label class="visually-hidden" for="user-password">Пароль</label>
-                   <input class="login-icon login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+                    <label class="visually-hidden" for="user-password">Пароль</label>
+                    <input class="login-icon login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
                 </p>
                 <p class="login-password-info">
                     <label class="login-checkbox">
@@ -162,20 +165,24 @@
                         <span class="checkbox-indicator"></span>
                         Запомните меня
                     </label>
-                    <a href="#" class="restore">Я забил пароль!</a>
+                    <a href="#" class="restore">Я забыл пароль!</a>
                 </p>
                 <button class="button" type="submit">Войти</button>
             </form>
-            <button class="modal-close">Закрить</button>
+            <button class="modal-close" title="Закрыть">Закрыть</button>
         </div>
     </section>
-    
+
     <section class="modal modal-map">
-        <h2 class="vissually-hidden">Как до нас добраться</h2>
-        <p>
-            <img src="../img/map.jpg" alt="Карта" width="780">
-        </p>
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1081.2016030169484!2d24.055253631521!3d49.86978584355861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473adce521d1ad4b%3A0x53d3b8acc15e3ea2!2z0LLRg9C70LjRhtGPINCR0L7Qs9C00LDQvdCwINCl0LzQtdC70YzQvdC40YbRjNC60L7Qs9C-LCAyNTUsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1540371189246" width="765" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+<!--        <p><img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>-->
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
     
+    <script src="js/main.js"></script>
+    <script src="js/popupmap.js"></script>
+    
 </body>
+
 </html>
